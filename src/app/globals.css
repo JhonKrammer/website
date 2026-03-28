@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --deep-space: #0A0B10;
+  --nebula-dark: #12141D;
+  --nebula-medium: #1A1D2E;
+  --stellar-blue: #6C8EEF;
+  --cosmic-purple: #A78BFA;
+  --aurora-cyan: #38BDF8;
+  --text-primary: #F0F0F5;
+  --text-secondary: #9CA3B0;
+  --text-tertiary: #636A7A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--deep-space);
+  color: var(--text-primary);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes scrollHint {
+  0%, 100% { transform: translateY(0); opacity: 0.4; }
+  50% { transform: translateY(8px); opacity: 1; }
+}
